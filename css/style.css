@@ -18,8 +18,8 @@ body{
 }
 .container .box{
    position:relative;
-   width: 300px;
-   height: 400px;
+   width: 400px;
+   height: 300px;
    margin:40px 0;
    background-color: #fff;
    border-radius: 5px;
@@ -71,4 +71,42 @@ body{
    transform:skewY(10deg);
    filter: blur(10px);
    z-index: -1;
+}
+.container .box.shadow4:before{
+    content: "";
+    position: absolute;
+    bottom:-10%;
+    left:5%;
+    width: 90%;
+    height: 20px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    filter: blur(10px);
+}
+.container .box.shadow5:before{
+    content: '';
+    position:absolute;
+    bottom:-15%;
+    left:5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0,0,0,0.3);
+    filter: blur(10px);
+    z-index: -1;
+}
+.container .box.shadow6{
+    background-color: aquamarine;
+    border-radius: 15px;
+    box-shadow: -15px -15px 25px rgba(255, 255, 255, 0.3),15px 15px 25px rgba(0, 0, 0, 0.3);
+
+}
+.container .box.shadow7{
+    background-color: aquamarine;
+    border-radius: 15px;
+    box-shadow: -15px -15px 25px rgba(255, 255, 255, 0.3),
+                     15px 15px 25px rgba(0, 0, 0, 0.3),
+                     inset -5px -5px 25px rgba(255, 255, 255, .3),
+                     inset 5px 5px 25px rgba(0, 0, 0, .3)
+                ;
+
 }

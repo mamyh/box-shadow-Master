@@ -33,3 +33,16 @@ body{
 .container .box.shadow1{
     box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
 }
+.container .box.shadow2:before {
+    content:'';
+    position:absolute;
+    bottom: 10px;
+    left:10%;
+    width: 90%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.3);
+    transform-origin: left;
+    transform: skewY(5deg);
+    filter: blur(5px);
+    z-index: -1;
+}
